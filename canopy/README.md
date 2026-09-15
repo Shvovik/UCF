@@ -1,34 +1,45 @@
-# UCF Mainnet — Canopy Deployment
+# UCF Canopy Testnet
 
-This folder contains configuration and documentation for launching **UCF Mainnet** on Canopy Network.
+This directory contains UCF experiments and configuration related to the Canopy Network infrastructure.
 
-## Why Canopy?
+## Objective
 
-Canopy allows us to launch an EVM-compatible chain with significantly lower infrastructure overhead compared to running a full independent validator set from day one.
+The objective is to evaluate Canopy as a potential infrastructure path for the UCF blockchain.
 
-## Current Status
+Areas of research include:
 
-- Chain configuration in progress
-- Virtual chain stage
-- Preparing for graduation (CNPY reserve target)
+* network initialization
+* node operation
+* validator infrastructure
+* RPC connectivity
+* blockchain applications
+* interoperability
+* developer tooling
 
-## Planned Parameters
+## Development Status
 
-- Chain Name: UCF Mainnet
-- Ticker: UCF
-- Network Type: EVM-compatible
-- Block Time: ~10 seconds (configurable)
-- Consensus: Canopy recursive architecture
+This is experimental infrastructure.
 
-## Next Steps
+No production UCF Mainnet is deployed from this directory.
 
-- [ ] Finalize genesis parameters
-- [ ] Complete branding and metadata
-- [ ] Reach graduation threshold
-- [ ] Deploy full network
-- [ ] Connect RPC and explorer
+## Planned Work
 
-## Notes
+* [ ] Build Canopy development environment
+* [ ] Configure UCF testnet parameters
+* [ ] Run local node
+* [ ] Run multi-node network
+* [ ] Test RPC connectivity
+* [ ] Deploy test applications
+* [ ] Document node requirements
+* [ ] Evaluate network performance
 
-Canopy is currently the primary launch path for UCF Mainnet.  
-Parallel work on a Geth-based version is also ongoing (see `/geth`).
+## Security
+
+Never commit:
+
+* private keys
+* validator keys
+* passwords
+* API keys
+* production credentials
+* wallet seed phrases

@@ -1,20 +1,64 @@
-# UCF Mainnet — Geth Implementation
+# UCF EVM Testnet
 
-This folder contains the preparation for running **UCF Mainnet** as an independent EVM chain using Go-Ethereum (Geth).
+This directory contains the experimental EVM-compatible blockchain infrastructure for UCF.
 
-## Goal
+## Objective
 
-Long-term vision includes operating a sovereign EVM-compatible blockchain with full control over:
+The purpose of this track is to evaluate an independent EVM-compatible UCF network using the Ethereum execution stack.
 
-- Consensus parameters
-- Validator set
-- Fee structure
-- Network upgrades
+## Development Goals
 
-## Current Status
+* custom genesis
+* chain configuration
+* EVM execution
+* RPC
+* peer-to-peer networking
+* multi-node operation
+* smart-contract deployment
+* blockchain explorer integration
 
-- Research and test environment stage
-- Genesis configuration drafting
-- Local testnet experiments
+## Current Stage
+
+This is a development/testnet environment.
+
+It must not be connected to production funds.
+
+## Important
+
+Consensus architecture must be selected deliberately.
+
+Older Geth private-network examples commonly used Clique Proof-of-Authority. However, Clique has been deprecated in modern Geth releases.
+
+Therefore UCF will not hard-code a deprecated consensus mechanism into the architecture. The final consensus configuration will be selected during testnet research.
 
 ## Planned Structure
+
+```text
+geth/
+├── genesis/
+│   └── README.md
+├── config/
+│   └── README.md
+├── testnet/
+│   └── README.md
+└── README.md
+```
+
+## Planned Testnet
+
+The initial testnet should support:
+
+* multiple nodes
+* deterministic genesis
+* custom Chain ID
+* RPC endpoint
+* peer discovery
+* test accounts
+* test native asset
+* smart-contract deployment
+
+## Security
+
+Private keys and passwords must never be committed to GitHub.
+
+Use isolated testnet wallets and infrastructure.

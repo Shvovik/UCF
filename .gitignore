@@ -1,1 +1,37 @@
+# Secrets
+.env
+.env.*
+*.key
+*.pem
+*.secret
+password.txt
 
+# Wallets / private keys
+keystore/
+wallet/
+keys/
+
+# Blockchain data
+data/
+chaindata/
+node*/data/
+*.ldb
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Node
+node_modules/
+
+# Build
+dist/
+build/
